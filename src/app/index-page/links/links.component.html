@@ -3,10 +3,10 @@
     <section class="sect">
         
         <div class="div two">
-            <a routerLink="introduction" class="p two">Introducción</a>
+            <a [routerLink]='"."' fragment="introduction" routerLinkActive="active" class="p two">Introducción</a>
         </div>
         <div class="div three">
-            <a routerLink="objetives" class="p three">Objetivos</a>
+            <a [routerLink]='"."' fragment="objetives" routerLinkActive="active" class="p three">Objetivos</a>
         </div>
         <div class="div four">
             <p class="p four">Gente que sigo</p>
@@ -14,15 +14,8 @@
         <div class="div five">
             <p class="p five">Eventos</p>
         </div>
-        <div class="div six">
-            <p class="p six">Páginas</p>
-        </div>
-        <div class="div seven">
-            <p class="p seven">Newsletters</p>
-        </div>
-        <div class="div eight">
-            <p class="p eight">Hashtags</p>
-        </div>
 
     </section>
 </aside>
+
+<app-footer></app-footer>

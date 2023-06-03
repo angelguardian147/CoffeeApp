@@ -15,6 +15,8 @@ import { ModelsPageComponent } from './models-page/models-page.component';
 import { IntroductionComponent } from './index-page/introduction/introduction.component';
 import { ObjetivesComponent } from './index-page/objetives/objetives.component';
 import { LinksComponent } from './index-page/links/links.component';
+import { CarouselComponent } from './index-page/carousel/carousel.component';
+import { CarouselEndComponent } from './index-page/carousel-end/carousel-end.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { LinksComponent } from './index-page/links/links.component';
     ModelsPageComponent,
     IntroductionComponent,
     ObjetivesComponent,
-    LinksComponent
+    LinksComponent,
+    CarouselComponent,
+    CarouselEndComponent
   ],
   imports: [
     BrowserModule,
