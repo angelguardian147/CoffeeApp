@@ -1,7 +1,14 @@
 
+.page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .aside{
     width: 20rem;
     font-family: var(--font-family-title);
+    font-size: .8rem;
 }
 
 .sect{
@@ -28,7 +35,7 @@ a{
 
 .p{
     background-color: white;
-    color: #838383;
+    color: var(--bg-footer);
     margin: 10px 0 10px 0;
     flex: 3;
 }
@@ -38,4 +45,8 @@ a{
     height: 20px;
     margin: 0 20px 0 8px;
     background-color: white;
+}
+
+app-footer{
+    align-self: flex-end;
 }

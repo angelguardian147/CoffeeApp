@@ -30,13 +30,6 @@ a{
     font-family: var(--font-family-text);
 }
 
-.icon{
-    width: 20px;
-    height: 20px;
-    margin: 0 20px 0 8px;
-    background-color: white;
-}
-
 article section{
     background-color: white;
     border: 1px solid #dfdfdf;
@@ -70,9 +63,8 @@ article .one div{
 }
 
 .middle{
-    flex: 1;
-    margin: 0 20px 0 0;
-    height: 50px;
+    margin-right: 2rem;
+    width: 2rem;
 }
 
 .three{
@@ -98,7 +90,7 @@ article .one div{
 
 .ot{
     width: 22%;
-    height: 200px;
+    height: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,9 +122,8 @@ article .one div{
 }
 
 .st img{
-    width: 80%;
-    height: 90%;
-    margin: 10px 10px 10px 10px;
+    width: 50%;
+    margin: 1rem;
 }
 
 .ot p{
