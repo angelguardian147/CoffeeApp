@@ -177,3 +177,32 @@ article .one div{
 hr{
     margin: 2rem 4rem 2rem 4rem;
 }
+
+#table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 0;
+    margin: 0;
+}
+
+.col-name{
+    width: 4.5rem;
+    text-align: center;
+    color: #838383;
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+    border: 0.5px solid;
+    margin: 0;
+}
+
+.title-col{
+    color: var(--bg-footer);
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+}
+
+#legend{
+    margin-top: 2rem;
+}

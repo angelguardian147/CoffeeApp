@@ -250,6 +250,7 @@
 
 <hr>
 
+<!-- ANALISIS ESTADISTICO DE LOS ATRIBUTOS NUMERICOS -->
 <article class="article right"  data-aos="fade-down-right" >
 
     <section class="sect one">
@@ -291,13 +292,237 @@
     </section>
 
     <section class="sect two">
+        
         <div id="two-r">
-            <a href="https://www.dane.gov.co/files/investigaciones/agropecuario/enda/ena/2019/boletin_ena_2019.pdf" target="_blank"><img class="icon fig-4" src="../../../assets/images/fig_4.png" alt="Not found"></a>
+            <div id="table">
+                <p class="col-name">Atributo</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.c_d_dep | keyvalue">
+                <p class="col-name">{{atr.key}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Código dept.</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.c_d_dep | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Código mun.</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.c_d_mun | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Año</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.a_o | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Area semb.</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.rea_sembrada_ha | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Area cose.</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.rea_cosechada_ha | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Producción</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.producci_n_t | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div id="two-r">
+            <div id="table">
+                <p class="col-name">Rendimiento</p>
+            </div>
+            <div id="table" *ngFor="let atr of numAtr.rendimiento_t_ha | keyvalue">
+                <p class="col-name">{{atr.value}}</p>
+            </div>
+        </div>
+        <div class="r" id="legend">
+            <a href="https://www.dane.gov.co/files/investigaciones/agropecuario/enda/ena/2019/boletin_ena_2019.pdf" target="_blank" class="p four r" id="p-fig-4">
+                Tabla 1. Resumen estadístico de los datos numéricos
+            </a>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<!-- MODA PARA LOS ATRIBUTOS CATEGORICOS (DEPARTAMENTO) -->
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Moda para los atributos categóricos</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Departamento</p>
         </div>
         <div class="r">
-            <a href="https://www.dane.gov.co/files/investigaciones/agropecuario/enda/ena/2019/boletin_ena_2019.pdf" target="_blank" class="p four r" id="p-fig-4">
-                Figura 4. Toneladas de producción por grupos de cultivo. 
-            </a>
+            <p class="p four r" id="p-four-r">
+                Para el atributo departamento la moda o el dato que más 
+                se repite es 'ANTIOQUIA', como podemos ver en el gráfico 1. 
+                Esto nos indica que, para este conjunto de datos, que corresponde 
+                a una base histórica de los años 2006 a 2018 relacionada con la producción 
+                agrícola Nacional de café, el departamento que reportó la mayor cantidad 
+                de cultivos en el intervalo de estos años fue el departamento de Antioquia, 
+                con un total de instancias de 1099 cultivos de café, seguido por los 
+                departamentos de Santander y Cundinamarca con 855 y 821 cultivos de café respectivamente.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_1.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 1: Moda para el atributo DEPARTAMENTO 
+            </p>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<!-- MODA PARA LOS ATRIBUTOS CATEGORICOS (MUNICIPIO) -->
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Municipio</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En el caso del atributo municipio se observa que la moda es 'ARGELIA', 'GUADALUPE' 
+                y 'BOLIVAR', en una misma proporción, es decir, los cultivos registrados en el 
+                conjunto de datos se concentran más en estos tres municipios. 
+                Este resultado nos indica que los municipios de Argelia, Guadalupe y Bolívar, 
+                que corresponden o pertenecen al departamento de Antioquia, fueron los que 
+                reportaron la mayor cantidad de cultivos de café entre los años 2006 a 2018, 
+                con un total de 36 instancias por igual para cada municipio. 
+                
+                Esta información la podemos corroborar en el gráfico 2, 
+                en donde podemos apreciar que los tres municipios antes mencionados 
+                se puntean como los primeros en la lista, seguidos por los municipios de Santa María, 
+                San Bernardo, San Cayetano, San Francisco, Buenavista, Pueblo Rico y Briceño, 
+                con la misma cantidad de 24 instancias cada uno.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_2.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 2: Moda para el atributo MUNICIPIO 
+            </p>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<!-- MODA PARA LOS ATRIBUTOS CATEGORICOS (ESTADO FISICO PRODUCCION y CICLO DE CULTIVO) -->
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Estado físico de producción y ciclo de cultivo</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para el atributo ciclo de cultivo obtenemos que el más utilizado es el permanente. 
+                En el caso del estado físico de producción el que más se repite es el café verde equivalente. 
+                En cuanto al ciclo de cultivo, podemos ver en la gráfica 6 que el total de 
+                cultivos de café corresponden a 7263 tipos de cultivos permanentes, 
+                que se tratan de cultivos que después de plantados llegan en un tiempo 
+                relativamente largo a la edad productiva, dan muchas cosechas y terminada su 
+                recolección no se los debe plantar de nuevo. Para el estado físico de la producción, 
+                se reportan que el total de 7263 instancias corresponden a café verde, 
+                que es el insumo básico para la elaboración del café tostado, el soluble y los extractos de café, 
+                y es la forma más común en la que es exportado a otros países.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_3.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 3: Moda para los atributos ESTADO FISICO PRODUCCION y CICLO DE CULTIVO 
+            </p>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<!-- MODA PARA LOS ATRIBUTOS CATEGORICOS (PERIODO) -->
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Periodo</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para el atributo PERIODO, vemos que la moda se concentra en el año 2011. 
+                Esto nos indica que entre los años 2006 a 2018 el periodo en el que se 
+                reportó una mayor cantidad de cultivos de café a nivel nacional fue en el 
+                2011 con un total de 627 instancias. Esto lo podemos observar en el grafico 7, 
+                donde se indica que el periodo que corresponde al 2011 es el que se posiciona 
+                en primer lugar; seguido a este periodo tenemos el 2012, 2010 y 2009 con un 
+                total de 625, 620 y 614 instancias respectivamente. En el grafico 8 también 
+                podemos apreciar como la cantidad de reporte de cultivos se disparó entre 
+                2010 a 2012, seguido después de una disminución para el año 2014.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_4.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 4: Moda para el atributo PERIODO
+            </p>
         </div>
     </section>
     
