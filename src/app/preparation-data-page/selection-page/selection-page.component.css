@@ -89,12 +89,13 @@ article .one div{
 
 .ot{
     width: 25%;
-    height: 10rem;
+    height: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: .5rem;
+    margin: 1rem;
+    padding: 2rem 0;
     border: 1px solid #dfdfdf;
     border-radius: 8px;
     background: var(--bg-color);
@@ -114,26 +115,31 @@ article .one div{
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-}
-
-.st{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65%;
-    margin-top: .2rem;
 }
 
 .st p{
+    padding: 0;
     color: var(--bg-footer);
     font-weight: bold;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.st{
+    width: 65%;
+    padding: 0;
+    color: var(--bg-footer);
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ot p{
-    margin: 0.2rem;
+    margin: 0;
     padding: 0;
     text-align: center;
     background: transparent;
@@ -178,35 +184,6 @@ hr{
     margin: 2rem 4rem 2rem 4rem;
 }
 
-.img-caja{
-    width: 22rem;
-    height: 12rem;
-}
-
-#percentaje{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-#percentaje .div-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 20rem;
-    height: 20rem;
-}
-
-#mising-table{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
 #table{
     display: flex;
     align-items: center;
@@ -222,16 +199,8 @@ hr{
     color: #838383;
     font-family: var(--font-family-title);
     font-size: .7rem;
-    margin: 0.2rem;
-}
-
-.col-title{
-    width: 15rem;
-    text-align: left;
-    color: #838383;
-    font-family: var(--font-family-title);
-    font-size: .7rem;
-    margin: 0.2rem;
+    border: 0.5px solid;
+    margin: 0;
 }
 
 .title-col{
@@ -242,13 +211,4 @@ hr{
 
 #legend{
     margin-top: 2rem;
-}
-
-#sect-table{
-    padding: 0;
-}
-
-#sect-table div{
-    margin: 0;
-    padding: 0;
 }

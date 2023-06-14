@@ -38,6 +38,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LinksPdpComponent } from './preparation-data-page/links-pdp/links-pdp.component';
 import { PreparationHomeComponent } from './preparation-data-page/preparation-home/preparation-home.component';
+import { SelectionPageComponent } from './preparation-data-page/selection-page/selection-page.component';
+import { CleaningPageComponent } from './preparation-data-page/cleaning-page/cleaning-page.component';
+import { FormatingPageComponent } from './preparation-data-page/formating-page/formating-page.component';
+import { ModelingHomeComponent } from './modeling-page/modeling-home/modeling-home.component';
+import { LinksMpComponent } from './modeling-page/links-mp/links-mp.component';
+import { SelectionModelingPageComponent } from './modeling-page/selection-modeling-page/selection-modeling-page.component';
+import { GenerationModelingPageComponent } from './modeling-page/generation-modeling-page/generation-modeling-page.component';
+import { GenerationComprobationPageComponent } from './modeling-page/generation-comprobation-page/generation-comprobation-page.component';
+import { EvaluationModelingPageComponent } from './modeling-page/evaluation-modeling-page/evaluation-modeling-page.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +83,16 @@ import { PreparationHomeComponent } from './preparation-data-page/preparation-ho
     DataVerificationComponent,
     ModalImgComponent,
     LinksPdpComponent,
-    PreparationHomeComponent
+    PreparationHomeComponent,
+    SelectionPageComponent,
+    CleaningPageComponent,
+    FormatingPageComponent,
+    ModelingHomeComponent,
+    LinksMpComponent,
+    SelectionModelingPageComponent,
+    GenerationModelingPageComponent,
+    GenerationComprobationPageComponent,
+    EvaluationModelingPageComponent
   ],
   imports: [
     BrowserModule,

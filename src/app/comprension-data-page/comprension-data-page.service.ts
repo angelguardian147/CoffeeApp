@@ -37,5 +37,18 @@ export class ComprensionDataPageService {
     );
   }
 
+  getAllDataInZero(): Observable<any>{
+    return this.http.get<any>(`${this.BASE_URL}/data-comprension/all-data-zeros`).pipe(
+      tap(
+        (res) => {
+          
+        },
+        (err) => {
+          console.log(err);
+        }
+      )
+    );
+  }
+
 
 }

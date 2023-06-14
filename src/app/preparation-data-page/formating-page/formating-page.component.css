@@ -55,20 +55,14 @@ article .one div{
     color: var(--bg-footer);
 }
 
-.sect.two{
-    padding: 1rem;
-}
-
-#two-r{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 20px 0 35px;
-}
-
 .middle{
     margin-right: 2rem;
     width: 2rem;
+}
+
+.middle-icon{
+    margin: 1rem;
+    width: 4rem;
 }
 
 #p-four-r{
@@ -212,26 +206,27 @@ hr{
     align-items: center;
     justify-content: center;
     border: 1px solid;
-    padding: 0;
+    padding: 2rem;
     margin: 0;
 }
 
 .col-name{
-    width: 4.5rem;
+    width: 15rem;
     text-align: center;
     color: #838383;
     font-family: var(--font-family-title);
     font-size: .7rem;
-    margin: 0.2rem;
+    margin: 1rem;
 }
 
 .col-title{
     width: 15rem;
-    text-align: left;
-    color: #838383;
+    text-align: center;
+    color: var(--bg-footer);
     font-family: var(--font-family-title);
     font-size: .7rem;
-    margin: 0.2rem;
+    font-weight: bold;
+    margin: 1rem;
 }
 
 .title-col{
@@ -251,4 +246,15 @@ hr{
 #sect-table div{
     margin: 0;
     padding: 0;
+}
+
+.sect.two{
+    padding: 1rem;
+}
+
+#two-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0 35px;
 }

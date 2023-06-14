@@ -29,11 +29,12 @@
             <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
             <p class="p three r">Tabla 2. Datos faltantes en el conjunto de datos</p>
         </div>
-        <div class="r">
+        <div class="r" id="mising-table">
+
             <section class="sect two" id="sect-table">
                 <div id="two-r">
                     <div id="table">
-                        <p class="col-name">Código dept.</p>
+                        <p class="col-title">Código del departamento</p>
                     </div>
                     <div id="table">
                         <p class="col-name">{{numAtr.c_d_dep}}</p>
@@ -41,7 +42,7 @@
                 </div>
                 <div id="two-r">
                     <div id="table">
-                        <p class="col-name">Departamento</p>
+                        <p class="col-title">Departamento</p>
                     </div>
                     <div id="table">
                         <p class="col-name">{{numAtr.departamento}}</p>
@@ -49,13 +50,137 @@
                 </div>
                 <div id="two-r">
                     <div id="table">
-                        <p class="col-name">Código mun.</p>
+                        <p class="col-title">Código del municipio</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.c_d_mun}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Municipio</p>
                     </div>
                     <div id="table">
                         <p class="col-name">{{numAtr.municipio}}</p>
                     </div>
                 </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Grupo de cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.grupo_de_cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Subgrupo de cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.subgrupo_de_cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Sistema productivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.desagregaci_n_regional_y}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Año de producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.a_o}}</p>
+                    </div>
+                </div>
             </section>
+
+            <section class="sect two" id="sect-table">
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Periodo de producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.periodo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área sembrada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.rea_sembrada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área cosechada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.rea_cosechada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.producci_n_t}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Rendimiento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.rendimiento_t_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Estado físico de la producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.estado_fisico_produccion}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Nombre científico</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.nombre_cientifico}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Ciclo de cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.ciclo_de_cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Número de atributos</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">17</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </section>
 
@@ -144,21 +269,62 @@
             <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
             <p class="p three r">Tabla 3. Variables numéricas con valores en cero</p>
         </div>
-        <div class="r">
+        <div class="r" id="mising-table">
             <section class="sect two" id="sect-table">
                 <div id="two-r">
                     <div id="table">
-                        <div class="row title-col">
-                            <div class="col-name">Hola 1<p></p></div>
-                            <div class="col-name">Hola 2<p></p></div>
-                            <div class="col-name">Hola 3<p></p></div>
-                        </div>
-                        <div class="row title-col">
-                            <div class="col-name">Hola<p></p></div>
-                        </div>
-                        <div class="row title-col">
-                            <div class="col-name">Hola<p></p></div>
-                        </div>
+                        <p class="col-title">Código del departamento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.c_d_dep}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Código del municipio</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.c_d_mun}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Año de producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.a_o}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área Sembrada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.rea_sembrada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área Cosechada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.rea_cosechada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.producci_n_t}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Rendimiento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.rendimiento_t_ha}}</p>
                     </div>
                 </div>
             </section>

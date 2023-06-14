@@ -12,12 +12,15 @@ import { misingData } from 'src/app/interfaces/misingData';
 export class DataVerificationComponent implements OnInit, OnDestroy {
 
   misingSubscription!: Subscription;
+  dataZeroSubscription!: Subscription;
   numAtr: misingData = {};
+  dataZero!: misingData;
 
   constructor(private comprensionService: ComprensionDataPageService) { }
 
   ngOnInit(): void {
     this.getMisingData();
+    this.getDataInZero();
   }
 
   getMisingData(){
@@ -31,8 +34,20 @@ export class DataVerificationComponent implements OnInit, OnDestroy {
     });
   }
 
+  getDataInZero(){
+    this.dataZeroSubscription = this.comprensionService.getAllDataInZero().subscribe({
+      next: (res) => {
+        this.dataZero = res;
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+  }
+
   ngOnDestroy(): void {
     this.misingSubscription.unsubscribe();
+    this.dataZeroSubscription.unsubscribe();
   }
 
 }
